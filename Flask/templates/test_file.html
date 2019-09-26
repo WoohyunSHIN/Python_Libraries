@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<!-- 여기서는 Client 측에서 파일을 업로드하고 다운로드 하는 것을 설명한다.-->
+<html>
+    <head>
+        <title>파일 업로드</title>
+    </head>
+    <body>
+        <!-- router 쪽에 /fileUpload 를 요청하겠다. 그 말인 즉, 서버측에서 파일을 어떻게 처리할것인지.-->
+        <form action = "/fileUpload" method = "POST" enctype="multipart/form-data">
+            <input type = "file" name = "file" >
+            <input type = "submit" value = "파일 전송">
+        </form>
+    </body>
+</html>

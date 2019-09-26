@@ -1,0 +1,35 @@
+{% extends 'default.html' %}
+{% block title %}
+  Detail
+{% endblock %}
+
+{% block contents %}
+<dir class="container-fluid">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">아이디</th>
+          <th scope="col">이메일</th>
+          <th scope="col">주소</th>
+          <th scope="col">비밀번호</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>{{ user[0] }}</td>
+          <td>{{ user[1] }}</td>
+          <td>{{ user[2] }}</td>
+          <td>{{ user[3] }}</td>
+        </tr>
+    </tbody>
+  </table>
+</dir>
+<br>
+<a href="/modify1/{{user[0]}}"><button type="button" class="btn btn-warning">Modify</button></a>
+<!--
+  또는 <button type="button" class="btn btn-warning" onclick="location.href='/modify1/{{user[0]}}'">Modify</button>
+-->
+<a href="/delete/{{user[0]}}"><button type="button" class="btn btn-danger">Delete</button></a>
+{% endblock %}
