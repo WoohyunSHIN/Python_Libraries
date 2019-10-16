@@ -7,7 +7,7 @@ driver.get('https://nid.naver.com/nidlogin.login')
 time.sleep(5)
 
 id='sjwert'
-pw='tlsdngus123'
+pw='####'
 
 # send_key 로 값을 밀어넣는다. 
 # 보안상 send_key 해서 넣어서 들어가는 방법은 못하게 막아 놓았다.
